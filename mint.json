@@ -26,6 +26,12 @@
       "url":"https://kita.blue"
    },
    "navigation":[
+      {
+         "group":"React",
+         "pages":[
+            "react"
+         ]
+      }
    ],
    "footerSocials":{
       "x":"https://x.com/mintlify",
