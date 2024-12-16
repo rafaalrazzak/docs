@@ -151,32 +151,36 @@ Untuk mempercantik tampilan aplikasi, kamu bisa menggunakan **Tailwind CSS**, fr
 
 ### Install Tailwind CSS:
 
-1. Install Tailwind dengan Bun atau npm:
-```bash
-   bun i -D tailwindcss postcss autoprefixer
-   npx tailwindcss init -p
-```
+<Steps>
+  <Step title="Install Tailwind dengan Bun atau npm:">
+    ```
+       bun i -D tailwindcss postcss autoprefixer
+       npx tailwindcss init -p
+    ```
+  </Step>
 
-2. Tambahkan konfigurasi Tailwind di file `index.css`:
-```css
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
-```
+  <Step title="Tambahkan konfigurasi Tailwind di file index.css">
+    ```
+       @tailwind base;
+       @tailwind components;
+       @tailwind utilities;
+    ```
+  </Step>
 
-3. Gunakan kelas Tailwind di komponen React:
-
-```jsx
-function App() {
-  return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        React itu Keren!
-      </h1>
-    </div>
-  );
-}
-```
+  <Step title="Gunakan kelas Tailwind di komponen React">
+    ```
+    function App() {
+      return (
+        <div className="flex justify-center items-center h-screen bg-gray-100">
+          <h1 className="text-4xl font-bold text-blue-600">
+            React itu Keren!
+          </h1>
+        </div>
+      );
+    }
+    ```
+  </Step>
+</Steps>
 
 Dengan Tailwind CSS, kamu bisa membuat antarmuka yang responsif dan modern dengan cepat!
 
