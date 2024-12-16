@@ -1,41 +1,41 @@
 {
-   "$schema":"https://mintlify.com/schema.json",
-   "name":"Kita",
-   "logo":{
-      "dark":"/logo/dark.svg",
-      "light":"/logo/light.svg"
+   "$schema": "https://mintlify.com/schema.json",
+   "name": "Kita",
+   "logo": {
+      "dark": "/logo/dark.svg",
+      "light": "/logo/light.svg"
    },
-   "favicon":"/favicon.svg",
-   "colors":{
-      "primary":"#0D9373",
-      "light":"#07C983",
-      "dark":"#0D9373",
-      "anchors":{
-         "from":"#0D9373",
-         "to":"#07C983"
+   "favicon": "/favicon.svg",
+   "colors": {
+      "primary": "#0a78b8",
+      "light": "#3a9bd8",
+      "dark": "#085a8c",
+      "anchors": {
+         "from": "#0a78b8",
+         "to": "#3a9bd8"
       }
    },
-   "topbarLinks":[
+   "topbarLinks": [
       {
-         "name":"Support",
-         "url":"mailto:hello@kita.blue"
+         "name": "Support",
+         "url": "mailto:hello@kita.blue"
       }
    ],
-   "topbarCtaButton":{
-      "name":"Kita",
-      "url":"https://kita.blue"
+   "topbarCtaButton": {
+      "name": "Kita",
+      "url": "https://kita.blue"
    },
-   "navigation":[
+   "navigation": [
       {
-         "group":"React",
-         "pages":[
+         "group": "React",
+         "pages": [
             "react"
          ]
       }
    ],
-   "footerSocials":{
-      "x":"https://x.com/mintlify",
-      "github":"https://github.com/mintlify",
-      "linkedin":"https://linkedin.com/company/mintlify"
+   "footerSocials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
    }
 }
