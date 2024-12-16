@@ -23,9 +23,11 @@ Sebelum mulai, pastikan kamu sudah menginstal **Bun.js** atau **Node.js** di kom
 
 ### Install Bun.js atau Node.js:
 
-* **Bun.js**: Bun adalah alternatif modern untuk menjalankan JavaScript, lebih cepat dan ringan.Instalasi Bun.js:```bash
-  curl -fsSL https://bun.sh/install | bash
-  ```
+* **Bun.js**: Bun adalah alternatif modern untuk menjalankan JavaScript, lebih cepat dan ringan.Instalasi Bun.js:
+
+```bash
+  curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
+```
 
 * **Node.js**: Jika lebih familiar dengan Node.js, kamu bisa mengunduhnya di [Node.js Official Site](https://nodejs.org/).
 
@@ -34,26 +36,35 @@ Setelah menginstal, buat proyek baru dengan menggunakan Bun.js atau Node.js.
 ### Langkah Cepat Membuat Proyek React:
 
 1. **Instal Bun atau Node**:
-   Jika kamu menggunakan Bun, install proyek React baru dengan perintah:```bash
-   bun create vite coba-react
-   # Pilih React + JavaScript
-   cd coba-react
-   bun install
-   bun dev
-   ```
+   Jika kamu menggunakan Bun, install proyek React baru dengan perintah:
 
-2. **Jika Menggunakan Node.js**, kamu bisa menggunakan Vite untuk membuat proyek React:```bash
+```bash
+ bun create vite coba-react# Pilih React + JavaScriptcd coba-react
+ bun install
+ bun dev
+```
+
+2. **Jika Menggunakan Node.js**, kamu bisa menggunakan Vite untuk membuat proyek React:
+
+```bash
    npm create vite@latest coba-react --template react
    cd coba-react
    npm install
    npm run dev
-   ```
+```
 
 3. **Bisa juga menggunakan Git,**  jika kamu sudah menginstall Git, kamu bisa menggunakan command berikut:
 
 ```bash
 git clone https://github.com/rafaalrazzak/coba-react.git
+cd coba-react
+bun install
+bun dev
 ```
+
+<Info>
+  Jika kamu menggunakan perintah `git clone` untuk mengunduh proyek, kamu tidak perlu lagi melakukan setup untuk integrasi dengan TailwindCSS. Proyek tersebut sudah siap untuk digunakan dengan TailwindCSS yang sudah dikonfigurasi. Cukup instal dependensi dengan `npm install` atau `bun install`, dan jalankan aplikasi menggunakan `npm run dev` atau `bun dev`.
+</Info>
 
 Proyekmu sekarang berjalan di `http://localhost:3000`.
 
@@ -139,15 +150,15 @@ Untuk mempercantik tampilan aplikasi, kamu bisa menggunakan **Tailwind CSS**, fr
 
 ### Install Tailwind CSS:
 
-1. Install Tailwind dengan Bun atau npm:```bash
+1. Install Tailwind dengan Bun atau npm:\`\`\`bash
    bun i -D tailwindcss postcss autoprefixer
-   npx tailwindcss init -p
+   npx tailwindcss init -p\`\`\````
    ```
 
-2. Tambahkan konfigurasi Tailwind di file `index.css`:```css
+2. Tambahkan konfigurasi Tailwind di file `index.css`:\`\`\`css
    @tailwind base;
    @tailwind components;
-   @tailwind utilities;
+   @tailwind utilities;\`\`\````
    ```
 
 3. Gunakan kelas Tailwind di komponen React:
