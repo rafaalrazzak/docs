@@ -11,32 +11,30 @@ React adalah pustaka JavaScript yang digunakan untuk membangun antarmuka penggun
 
 Berikut beberapa alasan mengapa React sangat populer di kalangan pengembang:
 
-- **Mudah Dipelajari**: Konsep dasar React sederhana dan mudah dipahami.
-- **Fleksibel**: Kamu bisa membangun berbagai jenis aplikasi, mulai dari aplikasi web sederhana hingga aplikasi besar.
-- **Populer**: Banyak perusahaan teknologi besar menggunakan React, jadi ini skill yang sangat berharga.
+* **Mudah Dipelajari**: Konsep dasar React sederhana dan mudah dipahami.
+
+* **Fleksibel**: Kamu bisa membangun berbagai jenis aplikasi, mulai dari aplikasi web sederhana hingga aplikasi besar.
+
+* **Populer**: Banyak perusahaan teknologi besar menggunakan React, jadi ini skill yang sangat berharga.
 
 ## 🛠 Persiapan Proyek Pertama
 
-Sebelum mulai, pastikan kamu sudah menginstal **Bun.js** atau **Node.js** di komputermu. 
+Sebelum mulai, pastikan kamu sudah menginstal **Bun.js** atau **Node.js** di komputermu.
 
 ### Install Bun.js atau Node.js:
 
-- **Bun.js**: Bun adalah alternatif modern untuk menjalankan JavaScript, lebih cepat dan ringan.
-
-  Instalasi Bun.js:
-  ```bash
+* **Bun.js**: Bun adalah alternatif modern untuk menjalankan JavaScript, lebih cepat dan ringan.Instalasi Bun.js:```bash
   curl -fsSL https://bun.sh/install | bash
   ```
 
-- **Node.js**: Jika lebih familiar dengan Node.js, kamu bisa mengunduhnya di [Node.js Official Site](https://nodejs.org/).
+* **Node.js**: Jika lebih familiar dengan Node.js, kamu bisa mengunduhnya di [Node.js Official Site](https://nodejs.org/).
 
 Setelah menginstal, buat proyek baru dengan menggunakan Bun.js atau Node.js.
 
 ### Langkah Cepat Membuat Proyek React:
 
 1. **Instal Bun atau Node**:
-   Jika kamu menggunakan Bun, install proyek React baru dengan perintah:
-   ```bash
+   Jika kamu menggunakan Bun, install proyek React baru dengan perintah:```bash
    bun create vite coba-react
    # Pilih React + JavaScript
    cd coba-react
@@ -44,13 +42,18 @@ Setelah menginstal, buat proyek baru dengan menggunakan Bun.js atau Node.js.
    bun dev
    ```
 
-2. **Jika Menggunakan Node.js**, kamu bisa menggunakan Vite untuk membuat proyek React:
-   ```bash
+2. **Jika Menggunakan Node.js**, kamu bisa menggunakan Vite untuk membuat proyek React:```bash
    npm create vite@latest coba-react --template react
    cd coba-react
    npm install
    npm run dev
    ```
+
+3. **Bisa juga menggunakan Git,**  jika kamu sudah menginstall Git, kamu bisa menggunakan command berikut:
+
+```bash
+git clone https://github.com/rafaalrazzak/coba-react.git
+```
 
 Proyekmu sekarang berjalan di `http://localhost:3000`.
 
@@ -58,23 +61,28 @@ Proyekmu sekarang berjalan di `http://localhost:3000`.
 
 Di dalam proyek React, kamu akan menemui beberapa folder dan file penting:
 
-- **`src/`**: Tempat kode sumber aplikasi React-mu.
-- **`public/`**: Tempat file statis seperti gambar atau ikon.
-- **`package.json`**: Menyimpan daftar dependensi dan script proyek.
+* **`src/`**: Tempat kode sumber aplikasi React-mu.
+
+* **`public/`**: Tempat file statis seperti gambar atau ikon.
+
+* **`package.json`**: Menyimpan daftar dependensi dan script proyek.
 
 ## ✨ Gaya Penulisan di React
 
 Di React, ada beberapa gaya penulisan yang perlu kamu ketahui untuk membuat kode lebih konsisten:
 
 ### 1. Camel Case 🐪
+
 Untuk nama variabel atau properti, kita menggunakan gaya penulisan camel case.
 Contoh: `namaDepan`, `tombolKlik`.
 
 ### 2. Pascal Case 🏷️
+
 Untuk nama komponen, kita menggunakan Pascal Case.
 Contoh: `KartuProfil`, `TombolLike`.
 
 ### 3. Kebab Case 💅
+
 Untuk nama class CSS, kita menggunakan kebab case.
 Contoh: `kartu-profil`.
 
@@ -83,6 +91,7 @@ Contoh: `kartu-profil`.
 Komponen adalah blok penyusun aplikasi React. Komponen dapat berupa fungsi yang menerima **props** (data) dan menampilkan UI.
 
 Contoh komponen sederhana:
+
 ```jsx
 function ProfilPengguna({ nama, foto }) {
   return (
@@ -99,6 +108,7 @@ function ProfilPengguna({ nama, foto }) {
 State adalah cara untuk membuat komponen React berinteraksi. Dengan state, komponen bisa berubah berdasarkan aksi pengguna.
 
 Contoh penggunaan state untuk tombol like:
+
 ```jsx
 import { useState } from 'react';
 
@@ -129,14 +139,12 @@ Untuk mempercantik tampilan aplikasi, kamu bisa menggunakan **Tailwind CSS**, fr
 
 ### Install Tailwind CSS:
 
-1. Install Tailwind dengan Bun atau npm:
-   ```bash
+1. Install Tailwind dengan Bun atau npm:```bash
    bun i -D tailwindcss postcss autoprefixer
    npx tailwindcss init -p
    ```
 
-2. Tambahkan konfigurasi Tailwind di file `index.css`:
-   ```css
+2. Tambahkan konfigurasi Tailwind di file `index.css`:```css
    @tailwind base;
    @tailwind components;
    @tailwind utilities;
@@ -160,10 +168,13 @@ Dengan Tailwind CSS, kamu bisa membuat antarmuka yang responsif dan modern denga
 
 ## 🌱 Tips Belajar React
 
-- **Mulai dari komponen kecil**: Cobalah untuk membangun aplikasi satu komponen dulu.
-- **Praktek terus**: Jangan takut mencoba hal baru dan gagal. Praktek adalah kunci!
-- **Bergabung dengan komunitas**: Ikuti tutorial atau bergabung dengan forum seperti [React Docs](https://reactjs.org/docs/getting-started.html).
-- **Baca dokumentasi**: React memiliki dokumentasi yang sangat lengkap dan mudah dipahami.
+* **Mulai dari komponen kecil**: Cobalah untuk membangun aplikasi satu komponen dulu.
+
+* **Praktek terus**: Jangan takut mencoba hal baru dan gagal. Praktek adalah kunci!
+
+* **Bergabung dengan komunitas**: Ikuti tutorial atau bergabung dengan forum seperti [React Docs](https://reactjs.org/docs/getting-started.html).
+
+* **Baca dokumentasi**: React memiliki dokumentasi yang sangat lengkap dan mudah dipahami.
 
 **Selamat Belajar React! 🎉**
 
