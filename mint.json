@@ -29,8 +29,8 @@
       {
          "group":"React",
          "pages":[
-            "introduction",
-            "why-react"
+            "/react/introduction",
+            "/react/why-react"
          ]
       }
    ],
