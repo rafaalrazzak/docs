@@ -29,9 +29,10 @@
       {
          "group": "React",
          "pages": [
-            "react"
+            "introduction",
+            "why-react"
          ]
-      }
+      },
    ],
    "footerSocials": {
       "github": "https://github.com/rafaalrazzak"
