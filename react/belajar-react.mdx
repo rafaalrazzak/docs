@@ -1,0 +1,133 @@
+---
+title: 'Belajar React'
+description: 'Belajar React dengan TailwindCSS'
+---
+
+
+## 💡 React Itu Apa Sih?
+
+React itu seperti LEGO untuk website! Kamu bisa:
+- Bikin komponen-komponen kecil
+- Gabungin komponen jadi aplikasi keren
+- Membuat antarmuka yang responsive dan dinamis
+
+## 🌟 Kenapa React Keren?
+
+- **Mudah Dipelajari**: Konsepnya sederhana banget
+- **Fleksibel**: Bisa bikin apa aja
+- **Populer**: Banyak perusahaan teknologi pakai React
+
+## 🛠 Persiapan Proyek Pertama
+
+### Langkah Cepat:
+1. Install Bun (alat buat jalanin JavaScript)
+2. Buat proyek baru:
+```bash
+bun create vite coba-react
+# Pilih React + JavaScript
+cd coba-react
+bun install
+bun dev
+```
+
+## 📁 Struktur Folder Penting
+
+- `src/`: Tempat kode utama kamu
+- `public/`: File statis seperti logo
+- `package.json`: Daftar library proyek
+
+## ✨ Gaya Penulisan di React
+
+### 1. Camel Case 🐪
+**Contoh**: `namaDepan`, `tombolKlik`
+- Dipakai untuk nama variabel dan props
+
+### 2. Pascal Case 🏷️
+**Contoh**: `KartuProfil`, `TombolLike`
+- Dipakai untuk nama komponen
+
+### 3. Kebab Case 💅
+**Contoh**: `kartu-profil`
+- Dipakai untuk nama class CSS
+
+## 🔧 Komponen React: Dasar Utama
+
+Komponen itu seperti potongan LEGO yang bisa dipakai berulang.
+
+```jsx
+function ProfilPengguna({ nama, foto }) {
+  return (
+    <div>
+      <img src={foto} alt={nama} />
+      <h3>{nama}</h3>
+    </div>
+  )
+}
+```
+
+## 🎛 State: Bikin Komponen Interaktif
+
+State membuat komponen bisa berubah-ubah!
+
+```jsx
+import { useState } from 'react'
+
+function TombolLike() {
+  const [jumlahLike, setJumlahLike] = useState(0)
+
+  return (
+    <button onClick={() => setJumlahLike(jumlahLike + 1)}>
+      👍 Like: {jumlahLike}
+    </button>
+  )
+}
+```
+
+## 🌟 Rendering Bersyarat
+
+Tampilan berubah sesuai kondisi:
+
+```jsx
+function PesanLogin({ isLogin }) {
+  return <div>{isLogin ? "Selamat Datang!" : "Silakan Login."}</div>
+}
+```
+
+## 🍃 Tambahan: Tailwind CSS (Bikin Tampilan Makin Kece!)
+
+1. Install Tailwind:
+```bash
+bun i -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+2. Tambahkan di `index.css`:
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+3. Pakai kelas Tailwind:
+```jsx
+function App() {
+  return (
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold text-blue-600">
+        React itu Keren!
+      </h1>
+    </div>
+  )
+}
+```
+
+## 🌱 Tips Belajar React
+
+- Mulai dari komponen kecil
+- Praktek terus!
+- Jangan takut salah
+- Ikuti tutorial dan komunitas
+
+**Selamat Belajar React! 🎉**
+
+Catatan: Tutorial ini dibuat agar kamu mudah memahami React. Santai aja, kamu pasti bisa! 💪
