@@ -4,9 +4,15 @@ description: 'Description of your new file.'
 ---
 
 ```jsx
-<div class="bg-blue-500 text-white p-4">
-  <h1 class="text-xl font-bold">Halo, Tailwind!</h1>
-  <p class="mt-2">Ini contoh pake Tailwind CSS.</p>
-</div>
+import { useMemo } from "react";
+
+function Example({ numbers }) {
+  const total = useMemo(() => {
+    console.log("Menghitung...");
+    return numbers.reduce((a, b) => a + b, 0);
+  }, [numbers]);
+
+  return <h1>Total: {total}</h1>;
+}
 
 ```
