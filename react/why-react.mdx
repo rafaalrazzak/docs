@@ -8,21 +8,26 @@ description: 'Perbandingan Web Tanpa dan Dengan React untuk Pemula'
 React sangat populer di kalangan pengembang, tetapi kenapa sih banyak orang memilih React dibandingkan teknologi lain? Berikut beberapa alasan mengapa React adalah pilihan yang tepat untuk membangun aplikasi web modern:
 
 ### 1. **Komponen Reusable (Dapat Digunakan Kembali)**
+
 React memungkinkan kamu untuk membuat komponen yang bisa digunakan berulang kali. Misalnya, kamu bisa membuat komponen tombol atau input field yang dapat digunakan di banyak tempat tanpa harus menulis ulang kode.
 
 ### 2. **Rendering Cepat dan Efisien**
+
 React menggunakan **Virtual DOM**, yang membuat pembaruan tampilan lebih cepat. React hanya memperbarui bagian dari halaman yang berubah, bukan seluruh halaman, sehingga aplikasi terasa lebih responsif.
 
 ### 3. **Pengelolaan State yang Mudah**
+
 State di React membuat komponen bisa memiliki data yang berubah-ubah, seperti tombol like yang jumlahnya bertambah. React memudahkan pengelolaan dan pembaruan state di aplikasi kamu.
 
 ### 4. **Ekosistem yang Besar dan Komunitas yang Aktif**
+
 React memiliki ekosistem yang luas, termasuk pustaka-pustaka yang membantu dalam hal routing, pengelolaan state, animasi, dan banyak lagi. Selain itu, komunitas React sangat aktif, sehingga banyak tutorial dan solusi tersedia untuk membantu pengembang.
 
 ### 5. **Fleksibilitas dan Skalabilitas**
+
 Dengan React, kamu bisa membangun aplikasi kecil maupun aplikasi besar, seperti situs web atau aplikasi mobile menggunakan **React Native**. React memungkinkan proyek untuk tumbuh tanpa mengalami masalah besar seiring waktu.
 
----
+***
 
 ## 🚀 Perbandingan Web Tanpa React vs. Dengan React
 
@@ -32,11 +37,14 @@ Untuk lebih memahami kenapa React sangat berguna, mari kita lihat perbandingan a
 
 Bayangkan kamu membuat aplikasi web dengan menggunakan HTML, CSS, dan JavaScript biasa. Setiap kali data atau tampilan perlu diperbarui, kamu harus:
 
-- Menulis ulang kode untuk **setiap elemen** yang berubah.
-- Melakukan manipulasi **DOM secara manual** (misalnya, mengubah teks, menambah atau menghapus elemen).
-- Ketika aplikasi menjadi lebih besar, **mengelola** kode dan pengubahannya bisa jadi sangat sulit.
+* Menulis ulang kode untuk **setiap elemen** yang berubah.
+
+* Melakukan manipulasi **DOM secara manual** (misalnya, mengubah teks, menambah atau menghapus elemen).
+
+* Ketika aplikasi menjadi lebih besar, **mengelola** kode dan pengubahannya bisa jadi sangat sulit.
 
 Contoh kode untuk tombol like di web tradisional:
+
 ```html
 <button id="like-button">Like</button>
 <script>
@@ -56,30 +64,29 @@ Pada contoh di atas, setiap kali kamu mengklik tombol, kamu harus **mengubah tek
 Dengan React, pengelolaan UI menjadi jauh lebih mudah. React membuat pembaruan tampilan dilakukan secara otomatis setiap kali ada perubahan pada **state** aplikasi.
 
 Contoh kode untuk tombol like di React:
+
 ```jsx
-import React, { useState } from 'react';
-
-function TombolLike() {
-  const [jumlahLike, setJumlahLike] = useState(0);
-
+function App() {
   return (
-    <button onClick={() => setJumlahLike(jumlahLike + 1)}>
-      👍 Like: {jumlahLike}
-    </button>
+    <div>
+      <h1>Judul</h1>
+      <p>Paragraf</p>
+    </div>
   );
 }
-
-export default TombolLike;
 ```
 
 Dengan React:
-- **State** disimpan dan dikelola dalam komponen.
-- React secara otomatis menangani pembaruan tampilan berdasarkan perubahan state.
-- Kamu tidak perlu menulis ulang kode untuk memperbarui DOM secara manual.
+
+* **State** disimpan dan dikelola dalam komponen.
+
+* React secara otomatis menangani pembaruan tampilan berdasarkan perubahan state.
+
+* Kamu tidak perlu menulis ulang kode untuk memperbarui DOM secara manual.
 
 React memungkinkan kamu untuk **menyusun kode** dalam **komponen-komponen** yang terpisah dan mudah dipelihara. Setiap komponen memiliki state dan tampilan masing-masing, dan React akan menangani pembaruan UI ketika state berubah.
 
----
+***
 
 ## 💡 Kenapa Perbandingan Ini Penting?
 
@@ -87,7 +94,7 @@ Dengan **web tradisional**, setiap perubahan membutuhkan interaksi langsung deng
 
 Sedangkan dengan **React**, kamu bisa mengelola UI dalam komponen kecil yang dapat digunakan kembali, membuat aplikasi lebih mudah dikembangkan, dirawat, dan diubah. Pembaruan tampilan terjadi secara otomatis, dan kamu tidak perlu mengelola DOM secara manual, membuat pengembangan lebih efisien.
 
----
+***
 
 ## 🚀 Kesimpulan
 
