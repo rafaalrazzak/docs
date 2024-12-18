@@ -4,13 +4,12 @@ description: 'Description of your new file.'
 ---
 
 ```jsx
-function App() {
-  return (
-    <div>
-      <h1>Judul</h1>
-      <p>Paragraf</p>
-    </div>
-  );
+function Child({ message }) {
+  return <h1>{message}</h1>;
+}
+
+function Parent() {
+  return <Child message="Halo dari Parent!" />;
 }
 
 ```
