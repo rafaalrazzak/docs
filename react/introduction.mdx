@@ -182,6 +182,38 @@ Untuk mempercantik tampilan aplikasi, kamu bisa menggunakan **Tailwind CSS**, fr
     ```
   </Step>
 
+  <Step title="Tambahkan content di dalam tailwind.config.js">
+    ```jsx
+      "./index.html", "./src/**/*.{js,ts,jsx,tsx}"
+    ```
+
+    Sebelum Diubah
+
+    ```jsx
+    /** @type {import('tailwindcss').Config} */
+    export default {
+      content: [],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
+    ```
+
+    Setelah Diubah
+
+    ```jsx
+    /** @type {import('tailwindcss').Config} */
+    export default {
+      content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    };
+    ```
+  </Step>
+
   <Step title="Gunakan kelas Tailwind di komponen React">
     ```jsx
     function App() {
