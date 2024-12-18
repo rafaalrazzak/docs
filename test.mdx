@@ -4,15 +4,14 @@ description: 'Description of your new file.'
 ---
 
 ```jsx
-function TodoList() {
-  const todos = ["Belajar React", "Membaca buku", "Olahraga"];
-  
+function AlertButton() {
+  // Fungsi untuk menangani klik
+  const handleClick = () => {
+    alert("Tombol Diklik!");
+  };
+
   return (
-    <div>
-      {todos.map((todo, index) => (
-        <div key={index}>{todo}</div>
-      ))}
-    </div>
+    <button onClick={handleClick}>Klik Saya</button>
   );
 }
 
