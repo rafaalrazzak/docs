@@ -1,0 +1,260 @@
+---
+title: 'Belajar Git'
+description: 'Panduan Git untuk Pemula'
+---
+
+## Pengenalan Git
+
+### Apa itu Git?
+
+Git adalah sistem kontrol versi yang membantu kamu menyimpan dan mengatur perubahan pada file project. Bayangkan seperti:
+
+* Mesin waktu untuk kodingan kamu
+
+* Album foto digital yang nyimpen semua versi file
+
+* Sistem yang bikin kamu bisa kerja bareng tim tanpa khawatir file ketuker
+
+### Kenapa Pakai Git?
+
+* ✅ Bisa kembali ke versi sebelumnya kalau ada kesalahan
+
+* ✅ Bisa kerja bareng tim dengan aman
+
+* ✅ Nyimpen history perubahan dengan rapi
+
+* ✅ GRATIS dan open source!
+
+## Instalasi Git
+
+### Windows
+
+1. Download Git dari [https://git-scm.com/](https://git-scm.com/)
+
+2. Install seperti biasa (Next > Next > Finish)
+
+3. Buka Command Prompt, ketik `git --version` untuk cek instalasi
+
+### MacOS
+
+1. Buka Terminal
+
+2. Install dengan Homebrew: `brew install git`
+
+3. Atau download dari [https://git-scm.com/](https://git-scm.com/)
+
+### Linux
+
+Buka Terminal dan ketik:
+
+```bash
+sudo apt-get update
+sudo apt-get install git
+```
+
+## Konsep Dasar Git
+
+### Area Kerja Git
+
+Git punya 3 area utama:
+
+1. **Working Directory**
+
+   * Tempat kamu ngoding sehari-hari
+
+   * File-file yang lagi kamu edit
+
+   * Kayak meja kerja yang bisa berantakan
+
+2. **Staging Area**
+
+   * Tempat persiapan sebelum commit
+
+   * File yang udah siap disimpan
+
+   * Kayak nampan yang isinya makanan siap saji
+
+3. **Repository**
+
+   * Tempat penyimpanan permanen
+
+   * Semua history perubahan ada di sini
+
+   * Kayak album foto yang rapi
+
+## Perintah Dasar Git
+
+### Mulai Project Baru
+
+```bash
+# Bikin repository baru
+git init
+
+# Cek status file
+git status
+```
+
+### Simpan Perubahan
+
+```bash
+# Pilih file yang mau disimpan
+git add namafile.txt    # Satu file
+git add .               # Semua file
+
+# Commit perubahan
+git commit -m "Pesan commit yang jelas"
+
+# Cek history commit
+git log
+```
+
+### Batal dan Kembali
+
+```bash
+# Batal sebelum commit
+git restore namafile.txt
+
+# Kembali ke commit sebelumnya
+git checkout [id_commit]
+```
+
+## Branch dan Merge
+
+### Kerja dengan Branch
+
+```bash
+# Lihat semua branch
+git branch
+
+# Bikin branch baru
+git branch fitur-baru
+
+# Pindah branch
+git checkout fitur-baru
+# atau
+git switch fitur-baru
+
+# Bikin dan pindah branch sekaligus
+git checkout -b fitur-baru
+```
+
+### Gabung Branch (Merge)
+
+```bash
+# Pindah ke branch utama
+git checkout main
+
+# Gabungkan branch
+git merge fitur-baru
+```
+
+## Bekerja dengan Remote Repository
+
+### Setup Remote
+
+```bash
+# Tambah remote repository
+git remote add origin https://github.com/username/repo.git
+
+# Cek remote yang ada
+git remote -v
+```
+
+### Upload dan Download
+
+```bash
+# Upload ke GitHub
+git push origin main
+
+# Download update terbaru
+git pull origin main
+
+# Clone repository yang udah ada
+git clone https://github.com/username/repo.git
+```
+
+## Tips dan Trik
+
+### Best Practices
+
+1. **Commit Sering-sering**
+
+   * Jangan nunggu projectnya selesai
+
+   * Commit setiap ada perubahan penting
+
+   * Lebih mudah track masalah
+
+2. **Pesan Commit yang Jelas**
+
+   * ✅ "Tambah fitur login"
+
+   * ✅ "Fix bug di form registrasi"
+
+   * ❌ "Update"
+
+   * ❌ "Fix"
+
+3. **Gunakan Branch**
+
+   * Bikin branch untuk fitur baru
+
+   * Jangan langsung di main branch
+
+   * Merge setelah selesai dan dicek
+
+## Troubleshooting
+
+### Masalah Umum dan Solusinya
+
+1. **Conflict saat Merge**
+
+   * Buka file yang conflict
+
+   * Pilih perubahan yang mau dipakai
+
+   * Commit ulang
+
+2. **Salah Commit**
+
+````bash
+# Batalkan commit terakhir tapi simpan perubahan
+git reset --soft HEAD^
+
+# Batalkan commit dan buang perubahan
+git reset --hard HEAD^```
+````
+
+1. **Lupa Branch**
+
+```bash
+# Cek lagi di branch mana
+git branch
+
+# Pindah ke branch yang benar
+git checkout branch-yang-benar
+```
+
+### Penutup
+
+Git memang banyak perintahnya, tapi kamu ga perlu hafal semuanya! Mulai dari yang basic dulu:
+
+1. `git add`
+
+2. `git commit`
+
+3. `git push`
+
+4. `git pull`
+
+Sisanya bisa dipelajari sambil jalan. Yang penting jangan takut salah, karena Git selalu nyimpen history! 😊
+
+***
+
+## Referensi Tambahan
+
+* Git Cheat Sheet: [https://education.github.com/git-cheat-sheet-education.pdf](https://education.github.com/git-cheat-sheet-education.pdf)
+
+* Git Documentation: [https://git-scm.com/doc](https://git-scm.com/doc)
+
+* GitHub Guides: [https://guides.github.com](https://guides.github.com)

@@ -28,8 +28,14 @@
    },
    "navigation":[
       {
+        "group": "Git",
+        "pages": [
+          "/git/introduction"
+        ]
+      },
+      {
          "group":"React",
-         "pages":[
+         "pages": [
             "/react/introduction",
             "/react/why-react"
          ]
